@@ -1,17 +1,39 @@
 <!doctype html>
 <html>
 <head>
- <title>Web1 - HTML</title>
+ <title>index</title>
  <meta charset="utf-8">
-</head>
+
+ <style> 
+ /*선택자의 우선순위는 구체적일수록 높다.*/
+#active{  /*ID 선택자*/
+ text-decoration:underline;
+ color:blue;
+}
+
+.saw { /*클래스 선택자 .saw*/
+ color:red;
+}
+
+ a { /*선택자 a*/
+ color:black;
+ text-decoration: none;
+ }   
+ h1 {
+  font-size:50px; text-align:center;
+  }
+ </style>
+ </head>
 
 <body>
+<h1><a href="index.html" style="color:blue">WEB</a></h1>
 
-<h1><a href="index.html">WEB</a></h1>
 <ol>
- <li><a href="html.html">html</a></li>
- <li><a href="css.html" style="color:">css</a></li>
- <li><a href="js.html">javaScript</a></li>
+ <li><a href="html.html" class="saw">html</a></li>
+<!-- <li><a href="css.html" style="color:red;text-decoration:underline">css</a></li> -->
+ <li><a href="css.html" class="saw" id="active">css</a></li>
+<!-- <li><a href="css.html" class="saw active">css</a></li> -->
+ <li><a href="js.html" class="saw">javascript</a></li>
 </ol>
 
 <h2>HTML</h2>
@@ -19,16 +41,18 @@
 Hypertext Markup Language (HTML)"</a> is the stnadar markup language for 
 <strong>creating <u>web</u> pasges</strong> and web applications.</p>
 
-<p>HTML elements are the building blocks of HTML pages.
-with HTML constructs, images and other objects, such as interactive forms,
-may be embedded into the rendered page.
-It provides a means to create structured documents by denoting structural semantics for text
-such as headings, paragraphs, lists, links, quotes, and other items.
-HTML elements are delineated by tags, written using angle brackets. </p>
+<p>
+HTML elements are the building blocks of HTML pages.<br>
+with HTML constructs, images and other objects, such as interactive forms,<br>
+may be embedded into the rendered page.<br>
+It provides a means to create structured documents by denoting structural semantics for text<br>
+such as headings, paragraphs, lists, links, quotes, and other items.<br>
+HTML elements are delineated by tags, written using angle brackets.<br>
+</p>
 
-<br>
-<img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="50%">
-
+<p>
+    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="30%">
+</p>
 
 </body>
 </html>
