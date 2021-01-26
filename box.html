@@ -4,25 +4,42 @@
  <title>index</title>
  <meta charset="utf-8">
 
- <style>
-      /*Block level element*/
+ <style> 
+    /* 
+     Block level element h1태그는 화면 전체를 쓴다.
      h1{
-         border-width:5px;
-         border-color:red;
-         border-style: solid;
-         display: inline; /*이 태그를 쓰면 block 속성이 inline으로 바뀜*/
-         
-     }
-      /*inline element*/
+         border-width:5px; //테두리 두께
+         border-color:red; //테두리 색깔
+         border-style: solid; //테두리 스타일
+         display: inline; block //속성이 inline 속성으로 바뀜
+    }
+    */
+    /*
+    inline element a태그는 화면 전체를 쓰지 않고 자기 크기만큼의 부피를 갖는다.
      a{
          border-width:3px;
          border-color:red;
          border-style: solid;
-        /* display: block; */ /*이것도 마찬가지 */
-     }
-
-     /*h1태그는 화면 전체를 쓰고, a태그는 선택된 크기만큼의 부피만 쓰는 것을 알 수 있다.*/
+         display: block; //inline element를 block level로 바꿀 수 있다.
+         display: none; //화면에 안보이게 함
+    }
+    */
     
+    /*위와 같은 코드
+    h1, a{
+         border-width:5px; //테두리 두께
+         border-color:red; //테두리 색깔
+         border-style: solid; //테두리 스타일
+    }
+    
+    */
+    /*위와 같은 코드*/
+    h1, a{
+        border:5px solid red;
+    }
+
+    
+
  </style>
 </head>
 
