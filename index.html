@@ -19,6 +19,7 @@
  color:black;
  text-decoration: none;
  }   
+
  h1 {
   font-size:45px; text-align:center; border-bottom: 1.5px solid gray; margin:0; padding:30px
 
@@ -29,38 +30,55 @@
       margin:0;
   }
 
+  div{
+        border: 2px solid gray
+    }
+    
   ol{
       border-right: 1px solid gray; width: 100px; margin:0; padding: 20px;
   }
+
+  .grid1{
+      border: 5px white
+      display grid;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  }
+
  </style>
  </head>
 
 <body>
 <h1><a href="index.html" style="color:green">WEB</a></h1>
-<ol>
- <li><a href="html.html" class="saw">html</a></li>
-<!-- <li><a href="css.html" style="color:red;text-decoration:underline">css</a></li> -->
- <li><a href="css.html" class="saw" id="active">css</a></li>
-<!-- <li><a href="css.html" class="saw active">css</a></li> -->
- <li><a href="js.html" class="saw">javascript</a></li>
-</ol>
 
-<p>
-<h2>WEB</h2>
-인터넷상의 정보를 하이퍼텍스트 방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다. <br>
-하이퍼텍스트 형식으로 표현된 인터넷상의 다양한 정보를 효과적으로 검색하는 시스템으로 전 세계적으로 가장 널리 보급되어 있다.<br>
-하이퍼텍스트는 웹 브라우저라 불리는 프로그램을 통해 웹 서버에서 "문서"나 웹 페이지등의 정보 조각을 읽어들여<br>
-컴퓨터 모니터에 출력하는 형태로 보이게 된다. <br>
-그러고 나서 사용자는 각 페이지에 있는 하이퍼링크를 따라 다른 문서로 이동하거나, 그 페이지를 서비스하고 있는 서버로 일련의 정보를 보낼 수도 있다. <br>
-하이퍼링크를 따라 이동하는 행위를 흔히 웹 서핑(web surfing, 문화어: 망유람) 또는 웹 브라우징이라 한다.<br>
-그리고 관련된 내용들이 모여있는 웹 페이지들의 집합을 웹 사이트라 한다.<br>
-영어 단어 월드와이드(worldwide)는 보통 공백이나 하이픈 없이 한 단어로 쓰이지만,<br>
-월드 와이드 웹(World Wide Web)과 그 약어인 WWW는 공식적인 영어 낱말로 사용되고 있다.<br>
-월드 와이드 웹은 다음의 세가지 기능으로 요약할 수 있겠다. <br>
-첫 번째 통일된 웹 자원의 위치 지정 방법 예를 들면 URL.<br>
-두 번째 웹의 자원 이름에 접근하는 프로토콜(protocol) 예를 들면 HTTP.<br>
-세 번째 자원들 사이를 쉽게 항해 할 수 있는 언어 예를 들면 HTML.<br>
-</p>
+<div class=grid1>
+    <ol>
+    <li><a href="html.html" class="saw">html</a></li>
+    <!-- <li><a href="css.html" style="color:red;text-decoration:underline">css</a></li> -->
+    <li><a href="css.html" class="saw" id="active">css</a></li>
+    <!-- <li><a href="css.html" class="saw active">css</a></li> -->
+    <li><a href="js.html" class="saw">javascript</a></li>
+    </ol>
+</div>
+
+<div class=grid1>
+    <p>
+    <h2>WEB</h2>
+    인터넷상의 정보를 하이퍼텍스트 방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다. <br>
+    하이퍼텍스트 형식으로 표현된 인터넷상의 다양한 정보를 효과적으로 검색하는 시스템으로 전 세계적으로 가장 널리 보급되어 있다.<br>
+    하이퍼텍스트는 웹 브라우저라 불리는 프로그램을 통해 웹 서버에서 "문서"나 웹 페이지등의 정보 조각을 읽어들여<br>
+    컴퓨터 모니터에 출력하는 형태로 보이게 된다. <br>
+    그러고 나서 사용자는 각 페이지에 있는 하이퍼링크를 따라 다른 문서로 이동하거나, 그 페이지를 서비스하고 있는 서버로 일련의 정보를 보낼 수도 있다. <br>
+    하이퍼링크를 따라 이동하는 행위를 흔히 웹 서핑(web surfing, 문화어: 망유람) 또는 웹 브라우징이라 한다.<br>
+    그리고 관련된 내용들이 모여있는 웹 페이지들의 집합을 웹 사이트라 한다.<br>
+    영어 단어 월드와이드(worldwide)는 보통 공백이나 하이픈 없이 한 단어로 쓰이지만,<br>
+    월드 와이드 웹(World Wide Web)과 그 약어인 WWW는 공식적인 영어 낱말로 사용되고 있다.<br>
+    월드 와이드 웹은 다음의 세가지 기능으로 요약할 수 있겠다. <br>
+    첫 번째 통일된 웹 자원의 위치 지정 방법 예를 들면 URL.<br>
+    두 번째 웹의 자원 이름에 접근하는 프로토콜(protocol) 예를 들면 HTTP.<br>
+    세 번째 자원들 사이를 쉽게 항해 할 수 있는 언어 예를 들면 HTML.<br>
+    </p>
+</div>
 
 <p>
 <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="30%">
@@ -75,11 +93,10 @@
  <a href="http://info.cern.ch/">최초 인터넷 페이지</a><br>
  <a href="https://bitnami.com/stack/wamp">아파치Download</a><br>
  <a href="https://blog.disqus.com/">댓글기능 추가</a><br>
- <a href="www.tawk.to">채팅기능 추가</a<<br>
+ <a href="www.tawk.to"/>채팅기능 추가</a><br>
  <a href="https://www.w3schools.com/">태그보기</a><br>
- <a href="https://https://caniuse.com//">태그정보</a><br>
- 
-/P>
+ <a href="https://caniuse.com/">태그정보</a><br>
+ </p>
   
  </body>
 </html>
