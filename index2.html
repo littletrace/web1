@@ -5,45 +5,56 @@
  <meta charset="utf-8">
 
 <style> 
- h1 {
-font-size:30px; text-align:center; border-bottom: 1.5px solid gray; margin:0; padding:30px;
-  }
+
+ h1{
+font-size:30px;
+text-align:center; 
+/* border-bottom: 1.5px solid green; */
+margin:0; 
+padding:30px;
+ }
 
  body{
       color: white;
       background-color: black;
-      margin: 0;
+      margin:0;
   }
 
- div{
-        border: 1px solid gray;
-        display: grid;
-    }
-
-  ol{
-     color: white; border-right: 1px solid gray; width: 100px; margin:0; padding: 20px;
+@media(min-width:500px){
+  #grid1 ol{
+     color: red;
+ border-right: 1px solid red;
+ width: 100px;
+ margin:0;
+ padding: 20px;
+ padding-left:33px;
   }
 
   #grid1{
-      border: 2px solid yellow;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      display:grid;
+      border: 1px solid yellow;
+        grid-template-columns: 150px 2fr;
   }
+
+ #article{
+padding: 30px;
+}
+}
  </style>
  </head>
 
 <body>
 <h1><a href="index.html">WEB</a></h1>
 
-<div>
+<div  id="grid1">
     <ol>
     <li><a href="html.html">html</a></li>
     <li><a href="css.html">css</a></li>
     <li><a href="js.html">javascript</a></li>
     </ol>
-</div>
 
-<div id=grid1>
+<div id="article">
+    <h2>css<h/2>
     <p>
     인터넷상의 정보를 하이퍼텍스트 방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다. <br>
     하이퍼텍스트 형식으로 표현된 인터넷상의 다양한 정보를 효과적으로 검색하는 시스템으로 전 세계적으로 가장 널리 보급되어 있다.<br>
@@ -60,11 +71,7 @@ font-size:30px; text-align:center; border-bottom: 1.5px solid gray; margin:0; pa
     세 번째 자원들 사이를 쉽게 항해 할 수 있는 언어 예를 들면 HTML.<br>
     </p>
 </div>
- 
+</div>
+
  </body>
 </html>
-
-
-
-
-
